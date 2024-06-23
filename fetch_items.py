@@ -133,7 +133,7 @@ def main():
             try:
                 print(f"Processing item: {item}")
                 transformed_data = transform_to_monday_schema(item)
-                insert_result = insert_to_monday(transformed_data)
+                # insert_result = insert_to_monday(transformed_data)
                 print(insert_result)
             except Exception as e:
                 print(f"Error processing item {item}: {e}")
